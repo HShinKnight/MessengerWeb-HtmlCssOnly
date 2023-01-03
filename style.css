@@ -1,0 +1,299 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 50px;
+ position: sticky;
+ top: 0;
+ border-bottom: 1px solid lightgray;
+ background-color: #FAFAFA;
+ opacity: 0.96;
+ padding: 10px;
+}
+
+.logoContainer{
+  width: 45px;
+  height: 45px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.menuItem {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 15px;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.menuItem:hover {
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: #0084ff;
+}
+
+.titleHeader {
+  margin-bottom: 20px;
+  font-size: 59px;
+  
+  /* copy */
+  background-image: linear-gradient(
+        83.84deg, rgb(0, 136, 255) -6.87%, rgb(160, 51, 255) 26.54%, rgb(255, 92, 135) 58.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.titleHeaderMobile {
+  margin-bottom: 20px;
+  font-size: 55px;
+  display: none;
+  
+  /* copy */
+  background-image: linear-gradient(
+        83.84deg, rgb(0, 136, 255) -6.87%, rgb(160, 51, 255) 26.54%, rgb(255, 92, 135) 58.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #595959;
+}
+
+.blockElement {
+  display: block;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #EBECF0;
+  border-radius: 10px;
+  font-size: 19px;
+  height: 36px;
+  width: 300px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.left {
+  /* display: inline-block; */
+  width: 45%;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.inner {
+  width: 95%;
+}
+
+.LoginButtom {
+  background-color: #0084ff;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  padding: 2px 20px 0px;
+  font-size: 19px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.WhatPassword {
+  margin-left: 20px;
+  font-size: 19px;
+}
+
+.inputSpan {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 19px;
+  color: #595959;
+}
+
+.right {
+  /* display: inline-block; */
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.StoreImage {
+  width: 32%;
+  padding: 5px;
+}
+
+.rightImage {
+  width: 100%;
+}
+
+.footer{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  /* background-color: gray; */
+}
+
+.leftfooter {
+  width: 48%;
+  font-size: 12px;
+  /* background-color: green; */
+  margin: 0 auto;
+}
+
+.rightfooter{
+  width: 48%;
+  /* background-color: yellow; */
+  margin: 0 auto;
+
+}
+
+.footerMenu{
+  width: 100%;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 11px;
+  color: inherit;
+}
+
+.fakemenu{
+  border: 1px solid lightgray;
+}
+
+.footerlogo{
+  width: 110px;
+  padding-left: 20px;
+  /* background-color: blue; */
+
+}
+
+.MobileMenuContainer{
+  font-size: 40px;
+  display: none;
+}
+
+@media screen and (max-width:780px) {
+  .menuContainer {
+    /* display: none; */
+  }
+  
+  .MobileMenuContainer{
+    /* display: block; */
+  }
+  .left{
+    width: 65%;
+    margin: 0 auto;
+  }
+  
+  .titleHeader{
+    text-align: center;
+    font-size: 57px;
+  }
+  
+  .description{
+    text-align: center;
+  }
+  
+  .right{
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .inner{
+    margin: 0 auto;
+  }
+  
+  .leftfooter{
+    width: 70%;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .rightfooter{
+    width: 70%;
+    text-align: center;
+  }
+  
+  .footerMenu{
+    font-size: 13px;
+    
+  }
+  
+}
+
+
+@media screen and (max-width:420px) {
+  
+  .menuContainer {
+    display: none;
+  }
+  
+  .MobileMenuContainer{
+    display: block;
+  }
+  
+  .left{
+    width: 90%;
+  }
+  
+  .titleHeader{
+    display: none;
+  }
+  
+  .titleHeaderMobile{
+    display: block;
+  }
+  
+  .description{
+    text-align: left;
+  }
+  
+  .right{
+    width: 90%;
+  }
+  
+  .inner{
+    margin: 0 auto;
+  }
+  
+  .leftfooter{
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  
+  .rightfooter{
+    width: 90%;
+    text-align: center;
+  }
+  
+  .footerMenu{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+}
+
